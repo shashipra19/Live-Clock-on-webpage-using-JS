@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Date-Time on Webpage - Shashi Pratap</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <img src="background.png" alt="">
+        <h1 id="current-time"></h1>
+        <h2 id="current-date"></h2>
+        <div class="quotes">
+            <p>TODAY'S QUOTES</p>
+            <h2>Lost time is never found again.</h2>
+        </div>
+    </div>
+
+    <script>
+        let time=document.getElementById("current-time");
+        setInterval(()=>{
+            let d=new Date();
+        time.innerHTML= d.toLocaleTimeString();
+        },1000)
+        date=new Date();
+        year=date.getFullYear();
+        month=date.getMonth()+1;
+        day=date.getDate();
+        document.getElementById("current-date").innerHTML=day+"/"+month+"/"+year;
+
+    </script>
+</body>
+</html>

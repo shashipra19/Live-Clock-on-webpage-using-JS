@@ -14,14 +14,18 @@
     position: relative;
 }
 .container img{
-    width: 80%;
+    width: 90%;
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container h1{
     position: absolute;
     top: 45%;
     left: 50%;
     transform: translate(-50%,-50%); /* in center */
-    color:rgb(255, 254, 170);
+    color:#FFFF99;
     font-size: 90px;
     font-weight: 600;
     letter-spacing: 3px;
@@ -31,7 +35,7 @@
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
-    color:#fff;
+    color:palegoldenrod;
     font-size: 70px;
     font-weight: 600;
     letter-spacing: 3px;
@@ -42,11 +46,121 @@
     text-align: center;
     bottom: 15%;
     font-size: 20px;
-    color: #fff;
+    color: peachpuff;
     font-weight: 500;
 }
 .quotes h2{
+    color:paleturquoise;
     font-size: 45px;
     margin-top: 10px;
     font-weight:500;
+}
+@media (max-width:360px) {
+    .container h1{
+        top: 50%;
+        left: 50%;
+        font-size: 30px;
+        letter-spacing:-2px;
+    }
+    #current-date{
+        top: 60%;
+        left: 50%;
+        font-size: 30px;
+    }
+
+    .quotes{
+        bottom: 25%;
+        font-size: 23px;
+    }
+    .quotes h2{
+        font-size: 20px;
+    }
+}
+/* Smallest screen */
+@media (min-width:360px) {
+    .container h1{
+        top: 50%;
+        left: 50%;
+        font-size: 35px;
+        letter-spacing:-2px;
+    }
+    #current-date{
+        top: 60%;
+        left: 50%;
+        font-size: 35px;
+    }
+
+    .quotes{
+        bottom: 18%;
+        font-size: 30px;
+    }
+    .quotes h2{
+        font-size: 25px;
+    }
+}
+/* Small screen */
+@media (min-width:600px) {
+    .container h1{
+        top: 45%;
+        left: 50%;
+        font-size: 55px;
+        letter-spacing: -2px;
+    }
+
+    #current-date{
+        font-size: 55px;
+        top: 58%;
+    left: 50%;
+    }
+
+    .quotes{
+        font-size: 45px;
+        bottom: 15%;
+    }
+    .quotes h2{
+        font-size: 35px;
+    }
+}
+/* medium screen */
+@media (min-width:800px) {
+    .container h1{
+        top: 40%;
+        left: 50%;
+        font-size: 73px;
+        letter-spacing: -2px;
+    }
+
+    #current-date{
+        font-size: 73px;
+        top: 55%;
+    left: 50%;
+    }
+
+    .quotes{
+        font-size: 50px;
+        bottom: 12%;
+    }
+    .quotes h2{
+        font-size: 40px;
+    }
+}
+/* large screen */
+@media (min-width:1000px) {
+    .container h1{
+        top: 45%;
+        left: 50%;
+        font-size: 90px;
+        letter-spacing: -2px;
+    }
+    #current-date{
+        top: 60%;
+        left: 50%;
+    }
+
+    .quotes{
+        font-size: 50px;
+    }
+    .quotes h2{
+        font-size: 40px;
+    }
 }
